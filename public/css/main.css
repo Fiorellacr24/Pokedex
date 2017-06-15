@@ -1,19 +1,37 @@
-@font-face{
+/*@font-face{
     font-family: 'Flexo-Black';
     src: url('../public/assets/font/Flexo/Flexo-Black.otf');
-}
+}*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Flexo-Black';
+    /*font-family: 'Flexo-Black';*/
 }
 h1{
     color: #e84848;
 }
-.search .input-field input[type=text]{
+.input-field input[type=text]{
     background-color: white;
-    width: 80%;
+    width: 40%;
     color: black;
     padding-left: 40px;
+}
+.fa-search{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.input-field{
+    position: relative;
+}
+.float-right{
+    float: right;
+}
+button{
+    padding: 0 12px 0 12px;
+    background-color: #7aa44a;
+    cursor: pointer;
 }

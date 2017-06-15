@@ -1,17 +1,31 @@
 'use strict';
 
-const render = (root, data) => {
+const render = (root) => {
     root.empty();
     const wrapper = $('<div class="wrapper"></div>');
     //Componentes
     wrapper.append(Header());
-    wrapper.append(Section());
-    
+    wrapper.append(Search());
+    //wrapper.append(PokeGrid());
+
     root.append(wrapper);
+};
+
+const state = {
+    datapokemon: null,
+    namepokemon: null
 };
 
 $( _ => {
 
-    const root = $('.root');
-    render(root);
+    getJSON('http://pokeapi.co/api/v2/pokedex/1/', (err, json) => {
+
+        if (err) { return alert(err.message);}
+
+        state.datapokemon = json;
+
+        const root = $('.root');
+        render(root);
+    });
+
 });
