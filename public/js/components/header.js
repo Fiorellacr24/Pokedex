@@ -1,6 +1,10 @@
 'use strict';
 
 const Header = () => {
-    const h = $('<header><div class="container"></div></header>');
-    return h;
+    const header = $('<header><div class="container"></div></header>');
+    const title = $('<h1>Pokédex</h1>');
+    
+    header.append(title);
+    
+    return header;
 }

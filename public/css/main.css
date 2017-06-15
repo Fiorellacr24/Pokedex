@@ -1,9 +1,19 @@
+@font-face{
+    font-family: 'Flexo-Black';
+    src: url('../public/assets/font/Flexo/Flexo-Black.otf');
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Flexo';
+    font-family: 'Flexo-Black';
 }
 h1{
     color: #e84848;
+}
+.search .input-field input[type=text]{
+    background-color: white;
+    width: 80%;
+    color: black;
+    padding-left: 40px;
 }
