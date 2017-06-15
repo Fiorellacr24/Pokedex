@@ -35,3 +35,6 @@ button{
     background-color: #7aa44a;
     cursor: pointer;
 }
+.modal .modal-close{
+    font-size: 20px;
+}
