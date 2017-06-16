@@ -7,13 +7,15 @@ const Search = (update) => {
     const input = $('<input type="text"/>');
     const button = $('<button class="float-right">A - Z</button>');
     const filter = $('<div class="filter"></div>');
-    const mostrar = $('<div></div>');
+    const row = $('<div class="row"></div>')
+    const mostrar = $('<div class="col m12"></div>');
 
     inputfield.append(icon);
     inputfield.append(input);
     parent.append(button);
     parent.append(inputfield);
-    parent.append(mostrar);
+    parent.append(row);
+    row.append(mostrar);
 
 
   state.datapokemon.pokemon_entries.forEach(function (e){

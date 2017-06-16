@@ -5,7 +5,7 @@
 @font-face {
     font-family: Flexo;
     font-weight: thin;
-    src: url('/public/assets/font/Flexo/Flexo-Black.otf') format("opentype");
+    src: url('/public/assets/font/Flexo/Flexo-Regular.otf') format("opentype");
 }
 body {
     font-family: Flexo;
@@ -20,7 +20,7 @@ h1{
 }
 .input-field input[type=text]{
     background-color: white;
-    width: 40%;
+    width: 60%;
     color: black;
     padding-left: 40px;
 }
@@ -47,4 +47,17 @@ button{
 }
 .pokename{
     text-transform: capitalize;
+}
+.image{
+    height: 120px;
+    padding-top: 20px;
+}
+.cont-grid{
+    height: 200px;
+    background-color: #dbdbdb;
+}
+.row .col.m3{
+    width: 15%;
+    margin-left: 45px;
+    margin-bottom: 30px;
 }
