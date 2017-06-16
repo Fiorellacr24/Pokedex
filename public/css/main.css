@@ -2,11 +2,18 @@
     font-family: 'Flexo-Black';
     src: url('../public/assets/font/Flexo/Flexo-Black.otf');
 }*/
+@font-face {
+    font-family: Flexo;
+    font-weight: thin;
+    src: url('/public/assets/font/Flexo/Flexo-Black.otf') format("opentype");
+}
+body {
+    font-family: Flexo;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: 'Flexo-Black';*/
 }
 h1{
     color: #e84848;
@@ -37,4 +44,7 @@ button{
 }
 .modal .modal-close{
     font-size: 20px;
+}
+.pokename{
+    text-transform: capitalize;
 }
