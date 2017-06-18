@@ -4,7 +4,7 @@ const PokeGrid = (data, update) => {
     const contgrid = $('<div class="col m3 cont-grid center-align"></div>');
     const viewmodal = $('<span></span>')
     const a = $('<a href="#modal1"></a>');
-    const img = $(`<img class="image" src= "http://serebii.net/art/th/${data.entry_number}.png"/>`);
+    const img = $(`<img class="image lazy" data-original= "http://serebii.net/art/th/${data.entry_number}.png"/>`);
     const namepoke = $('<p class="pokename">'+data.pokemon_species.name+'</p>');
 
     //console.log(data.entry_number);

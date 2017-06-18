@@ -9,6 +9,7 @@ const render = (root) => {
     //wrapper.append(PokeGrid());
 
     root.append(wrapper);
+	 $("img.lazy").lazyload();
 };
 
 const state = {
@@ -27,5 +28,8 @@ $( _ => {
         const root = $('.root');
         render(root);
     });
+	
+   
+	
 
 });
