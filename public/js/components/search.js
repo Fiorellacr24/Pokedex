@@ -18,10 +18,9 @@ const Search = (update) => {
     row.append(mostrar);
 
 
-  state.datapokemon.pokemon_entries.forEach(function (e){
-      /*mostrar.append(`<img src="http://serebii.net/art/th/${e.entry_number}.png"/>`);*/  
+  state.datapokemon.pokemon_entries.forEach(function (e){ 
       mostrar.append(PokeGrid(e,update));
-	  mostrar.append(Modal(e, update));
+	  //mostrar.append(Modal(e));
   });  
 
     return parent;

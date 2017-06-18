@@ -15,7 +15,7 @@ const PokeGrid = (data, update) => {
 
     
     a.on('click',function(e){
-        contgrid.append(Modal());
+        contgrid.append(Modal(data));
     });
     return contgrid;
 }
