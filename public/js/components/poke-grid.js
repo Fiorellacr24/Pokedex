@@ -20,12 +20,3 @@ const PokeGrid = (data, update) => {
     return contgrid;
 }
 
-
-/*    const reRender = () => {
-        const stationContainer = $('<div class="station-container"></div>');
-        state.datapokemon.forEach((data)=>{
-            stationContainer.append(PokeGrid(data));
-        });
-
-        return stationContainer;
-    }*/

@@ -55,14 +55,15 @@ button{
 .cont-grid{
 	height: 200px;
 	background-color: #dbdbdb;
+	border-radius: 10px;
 }
-.row .col.m3{
+.search .row .col.m3{
 	width: 15%;
 	margin-left: 30px;
 	margin-bottom: 30px;
 }
 @media only screen and (min-width: 993px){
-	.container {
+	.search{
 		width: 85%;
 	}
 }
