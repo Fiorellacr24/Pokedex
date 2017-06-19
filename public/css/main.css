@@ -67,3 +67,23 @@ button{
 		width: 85%;
 	}
 }
+.modal .title-modal{
+	font-size: 30px;
+}
+/*.modal .ico-close{
+	background-image: url('../assets/icon/cross-out.png');
+	background-repeat: no-repeat;
+	height: 20px;
+}*/
+.modal .ico-close{
+	font-size: 24px;
+}
+.modal{
+	background-color: #edecec;
+}
+.modal .description{
+	background-color: #36a4d3;
+}
+.padd-left{
+	padding-left: 50px;
+}

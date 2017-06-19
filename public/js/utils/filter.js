@@ -1,9 +1,9 @@
 'use strict';
 
-function filterByPokemon(pokemons,query) {
-  const pokemonFiltered = pokemons.filter((pokemon)=>{
-      return pokemon.pokemon_species.name.indexOf(query.toLowerCase())!=-1;
-  });
-
-  return pokemonFiltered;
-}
+const filterByName = (datapokemon,query) => {
+    return datapokemon.filter( (data) => {
+        if (data.pokemon_species.name.toLowerCase().indexOf(query.toLowerCase()) != -1){
+            return data;
+        }
+    });
+};

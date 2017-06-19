@@ -14,7 +14,7 @@ const render = (root) => {
 
 const state = {
     datapokemon: null,
-    namepokemon: null
+    namepokemon: null,
 };
 
 $( _ => {
