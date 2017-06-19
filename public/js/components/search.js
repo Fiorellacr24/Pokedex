@@ -8,7 +8,6 @@ const Search = (update) => {
     const button = $('<button class="float-right">A - Z</button>');
     const row = $('<div class="row"></div>')
     const mostrar = $('<div></div>');
-    const filter = $('<div class="filter"></div>');
 
     inputfield.append(icon);
     inputfield.append(input);
@@ -19,22 +18,21 @@ const Search = (update) => {
 
 	input.on('keyup', (e) => {
 		if(input.val() != 0){
-			const value = filterByName(state.namepokemon, input);
-			reRender(value, parent.next());
+            const value = filterByName(state.datapokemon.pokemon_entries, input.val());
+            reRender(mostrar, value, update);
 		}
 	});
 	
   state.datapokemon.pokemon_entries.forEach(function (e){ 
       mostrar.append(PokeGrid(e,update));
-	  //mostrar.append(Modal(e));
   });  
 	
     return parent;
 }
 
-const reRender = (filter, value, update)=>{
-    filter.empty();
+const reRender = (mostrar, value, update)=>{
+    mostrar.empty();
 	value.forEach((e)=> {
-		filter.append(PokeGrid(e,update));
+		mostrar.append(PokeGrid(e,update));
 	});
 };
