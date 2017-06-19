@@ -71,15 +71,16 @@ button{
 	font-size: 30px;
 }
 /*.modal .ico-close{
-	background-image: url('../assets/icon/cross-out.png');
-	background-repeat: no-repeat;
-	height: 20px;
+background-image: url('../assets/icon/cross-out.png');
+background-repeat: no-repeat;
+height: 20px;
 }*/
 .modal .ico-close{
 	font-size: 24px;
 }
 .modal{
 	background-color: #edecec;
+	height: 300px;
 }
 .modal .description{
 	background-color: #36a4d3;
