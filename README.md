@@ -13,4 +13,4 @@ vayan cargando las imágenes
 4. Ingresar el nombre del Pokemón a buscar en el input 
 y ejecutará los resultados
 
-Para ver cómo quedó haz clic [aqui](https://fiorellacr24.github.io/Pokedex/)
+Para ver cómo quedó haz clic [aqui](https://fiorellacisneros.github.io/Pokedex/)
